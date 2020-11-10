@@ -43,8 +43,8 @@ class SSHConnection:
         self.sftp.get(remote_path, local_path)
 
     # 在远程主机上创建目录
-    def mkdir(self, target_path, mode='0777'):
-        self.sftp.mkdir(target_path, mode)
+    def mkdir(self, target_path):
+        self.sftp.mkdir(target_path)
 
     # 删除远程主机上的目录
     def rmdir(self, target_path):
